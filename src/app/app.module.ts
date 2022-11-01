@@ -12,6 +12,8 @@ import { NavigationListComponent } from './components/navigation-list/navigation
 import { CampaignPostsComponent } from './campaign-posts/campaign-posts.component';
 import { CampaignYoutubeComponent } from './campaign-youtube/campaign-youtube.component';
 import { UserComponent } from './components/user/user.component';
+import { CampaignOverviewComponent } from './components/campaign-overview/campaign-overview.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,8 +27,9 @@ import { UserComponent } from './components/user/user.component';
     CampaignPostsComponent,
     CampaignYoutubeComponent,
     UserComponent,
+    CampaignOverviewComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
