@@ -1,0 +1,10 @@
+<ul>
+  <h3 class="title">{{ title }}</h3>
+  <li
+    *ngFor="let item of items"
+    (click)="getLocation($event)"
+    [ngClass]="{ active: this.activeTab === '{{item}}' }"
+  >
+    {{ item }}
+  </li>
+</ul>

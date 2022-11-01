@@ -1,0 +1,12 @@
+@import "../../../sass/styles.scss";
+
+.page-header {
+  height: $page-header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+h2 {
+  margin: auto;
+}

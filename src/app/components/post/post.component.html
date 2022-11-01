@@ -1,0 +1,29 @@
+<div *ngIf="post" class="ig-post">
+  <div class="header">
+    <h4>Instagram Post</h4>
+  </div>
+  <app-user [user]="post.user"></app-user>
+  <div class="image">
+    <!-- <img [src]="post.imageUrl" /> -->
+    <img
+      src="https://images.unsplash.com/photo-1661347334008-da5448d2a6cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      alt="post picture"
+    />
+  </div>
+  <div class="footer">
+    <div class="views">
+      <i class="bi bi-eye-fill"></i>
+      <p>{{ post.views }}</p>
+    </div>
+    <div class="interactions">
+      <div class="likes">
+        <i class="bi bi-heart-fill"></i>
+        <p>{{ post.likes }}</p>
+      </div>
+      <div class="comments">
+        <i class="bi bi-chat-fill"></i>
+        <p>{{ post.comments }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+@import "../../../sass/styles.scss";
+
+.sidebar {
+  width: $sidebar;
+  height: 100vh;
+  background-color: $mid-gray;
+  border-right: 1px solid $dark-gray;
+  padding: 39px 42px;
+  position: absolute;
+  top: $page-header;
+  left: 0;
+}
+ul {
+  p {
+    color: $black;
+  }
+  li {
+    color: $green-gray;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    cursor: pointer;
+  }
+}
+
+ul + ul {
+  margin-top: 49px;
+}
+
+.active {
+  color: $menu-active !important;
+  font-weight: 800 !important;
+}

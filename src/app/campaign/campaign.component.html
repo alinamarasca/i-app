@@ -1,0 +1,17 @@
+<app-location-header [location]="activeTab"></app-location-header>
+<app-sidebar (location)="selectLocation($event)"> </app-sidebar>
+<div class="page-content posts">
+  <div class="content" *ngIf="activeTab === 'Overview'">
+    <app-post [post]="post"></app-post>
+    <app-post [post]="post"></app-post>
+    <app-post [post]="post"></app-post>
+    <app-post [post]="post"></app-post>
+    <app-post [post]="post"></app-post>
+  </div>
+  <div *ngIf="activeTab === 'Instagram Posts'">
+    <app-campaign-posts></app-campaign-posts>
+  </div>
+  <div *ngIf="activeTab === 'YouTube'">
+    <app-campaign-youtube></app-campaign-youtube>
+  </div>
+</div>

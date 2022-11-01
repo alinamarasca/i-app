@@ -1,0 +1,44 @@
+@import "../../../sass/styles.scss";
+
+.location {
+  // position: absolute;
+  top: $page-header;
+  left: $sidebar;
+  height: 115px;
+  width: calc(100vw - $sidebar);
+  box-shadow: $bottom-shadow;
+  padding-left: 37px;
+  padding-right: 37px;
+  @extend %row-space-between;
+}
+
+.campaign {
+  display: flex;
+}
+
+.content {
+  @extend %row-space-between;
+  width: 100%;
+  max-width: 1440px;
+}
+
+p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.controls {
+  display: flex;
+  gap: 14px;
+}
+//not icon
+.download {
+  @include secondary-button(false);
+}
+//is icon
+.close {
+  @include secondary-button(true);
+}

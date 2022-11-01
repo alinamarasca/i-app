@@ -1,0 +1,31 @@
+<div id="sidebar" class="sidebar">
+  <div class="content">
+    <ul>
+      <h3 class="title">Campaign insights</h3>
+      <li>Overall Dashboard</li>
+      <li>Impressions</li>
+      <li>Engagements</li>
+    </ul>
+    <ul>
+      <h3 class="title">Publications</h3>
+      <li
+        (click)="getLocation($event)"
+        [ngClass]="{ active: active === 'Overview' }"
+      >
+        Overview
+      </li>
+      <li
+        (click)="getLocation($event)"
+        [ngClass]="{ active: active === 'Instagram Posts' }"
+      >
+        Instagram Posts
+      </li>
+      <li
+        (click)="getLocation($event)"
+        [ngClass]="{ active: active === 'YouTube' }"
+      >
+        YouTube
+      </li>
+    </ul>
+  </div>
+</div>
